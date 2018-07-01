@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                  <li class="active"><a href="">Home</a></li>
-                 <li><a data-toggle="collapse" href="#aboutme">About me</a></li>
+                 <li><a   href="#aboutme">About me</a></li>
                   <li><a href="#Projects">My Projects</a></li>    
                  <li><a href="#cert">IT Certifications</a></li>
                  <li><a href="#Res">Contact Me</a></li>    
@@ -78,7 +78,7 @@
             
             <div class="col-sm-4"> 
                 <h3>Objective</h3>
-                <p> I am an IT Support Engineer with 8 year's experience onsite and remote support I want to use my skills, knowledge, experience and adaptability to obtain Web Developer job where I can be challenged. I like to develop myself, work cooperatively in a team, learn new things and do my work in timely manner with a high quality.</p>
+                <p>MIS graduate student at Texas Southern University started at fall 2017 semester. I am an IT Support Engineer with 8 year's experience onsite and remote support I want to use my skills, knowledge, experience and adaptability to obtain Web Developer job where I can be challenged. I like to develop myself, work cooperatively in a team, learn new things and do my work in timely manner with a high quality.</p>
             </div>
         
             <div class="col-sm-4"> 
@@ -100,23 +100,23 @@
          <h2>Programmed by C# and Java</h2>
            <div class="row">
             <div class="col-sm-3">
-              <img src="https://zuhairma.github.io/portofolio/Images/1.png" class="img-thumbnail">   
+              <img src="images/1.png" class="img-thumbnail">   
                <h4>Project 1 - ServiceDesk+ ManageEngine</h4>
                 <p>Installation and customization a service desk plus on Windows 2008 server and configured with MYSQL</p>
             </div>
            
                <div class="col-sm-3">
-              <img src="https://zuhairma.github.io/portofolio/Images/21.jpg" class="img-thumbnail">   
+              <img src="images/21.jpg" class="img-thumbnail">   
                <h4>Project 2 - Letters,Words and Statements Counting in a Text File</h4>
                 <p>The project is used to open and read a text file and count the occurrence of a, an, butâ€¦ and gives statistics about the total number of characters, words and sentences.</p>
             </div>
                <div class="col-sm-3">
-              <img src="https://zuhairma.github.io/portofolio/Images/3.png" class="img-thumbnail">   
+              <img src="images/3.png" class="img-thumbnail">   
                <h4>Project 3 - Guess by Ping it Project (Android APP) </h4>
                 <p>The game was created in Java and designed using Android Studio, below are the objective and the project details: Project Objective: The game is guessing game played by two players against each other.</p>
             </div>
                <div class="col-sm-3">
-              <img src="https://zuhairma.github.io/portofolio/Images/123.png" class="img-thumbnail">   
+              <img src="images/123.PNG" class="img-thumbnail">   
                <h4>Project 4 -Tic-Tac-Toe (Command line application)</h4>
                 <p>The game was created in C++ and run in a command line interface, below are the details: Project Objective: The XO game consists of two-dimensional character array 3X3 which played by two players and it will be ended whenever the player close the three Xâ€™s or Oâ€™s horizontally, vertically or diagonally.</p>
             </div>
@@ -224,14 +224,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
- jQuery( document ).ready(function() {
-    jQuery('.navbar-collapse a').click(function(){ 
-      jQuery('.navbar-collapse').css('height', '0');
-      jQuery('.navbar-collapse').removeClass('in');
-    });  
- });
-</script>   
+    <script>
+     
+        $('.navbar-nav').find('a').on('click', function(e){
+          $('.navbar-toggle').trigger('click');
+        });
+
+    </script>
 </body>
 
 </html>
