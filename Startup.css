@@ -6,7 +6,7 @@ html , body , .cover{
 div.cover
 {
     
-    background: lightblue url("images/123.jpg") top left no-repeat;
+    background: lightblue url("https://zuhairma.github.io/portofolio/images/123.jpg") top left no-repeat;
     background-size: cover;
     display: table;
     width: 100%;
@@ -81,7 +81,7 @@ h2+p{
 
 section#Projects
 {
-    background: url("images/1.jpg") top left no-repeat;
+    background: url("https://zuhairma.github.io/portofolio/images/1.jpg") top left no-repeat;
     background-size: cover;
     color: white;
     text-align: left;
