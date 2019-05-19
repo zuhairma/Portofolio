@@ -15,7 +15,7 @@ $to = "Zuhair_m_h@yahoo.com";
 $headers = "From: $email_from \r\n";
 $headers .="Reply-to: $email \r\n";
 mail($to, $subject, $email_body, $headers);
-header("Location: index,html");
+header("Location: index.html");
 
 
 ?>
