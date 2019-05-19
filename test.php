@@ -1,8 +1,18 @@
 <?php
-
-    echo "Your firstname is " . $_POST['fullname'] . "<br>";
-
-    echo "You email is " . $_POST['email'] ;
-
+$name = $_POST['fullname'];
+  
+$mailfrom = $_POST['email'];
+  $sub = $_POST['sub'];
+ 
+ $comments = $_POST['comments'];
+ 
+ $mailTo = "zuhair_m_h@yahoo.com";
+ 
+ $headers = "From: ".$mailfrom 
+   
+ $txt = "You've received email from ".$name .\n\n".$comments;
+  
+mail($mailTo, $sub, $txt, $headers);
+  header("Location: index.html");
   
 ?>
