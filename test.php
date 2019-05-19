@@ -9,7 +9,7 @@ if(isset($_POST['submit']))
   $headers = "From: " .$mailfrom 
     $txt = "You've received email from ".$name .\n\n" .$comments;
   mail($mailTo, $sub, $txt, $headers);
-  header("Location: index.php?mailsend");
+  header("Location: index.html");
 }
 
 ?>
