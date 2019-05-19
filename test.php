@@ -1,18 +1,19 @@
 <?php
-$name = $_POST['fullname'];
-  
-$mailfrom = $_POST['email'];
-  $sub = $_POST['sub'];
- 
- $comments = $_POST['comments'];
- 
- $mailTo = "zuhair_m_h@yahoo.com";
- 
- $headers = "From: ".$mailfrom 
-   
- $txt = "You've received email from ".$name .\n\n".$comments;
-  
-mail($mailTo, $sub, $txt, $headers);
-  header("Location: index.html");
+    $name = $_POST['fullname'];
+    $email = $_POST['email'];
+    $message = $_POST['comments'];
+    $from = 'From: TangledDemo'; 
+    $to = 'zuhair_m_h@yahoo.com; 
+    $subject = 'Hello';
+
+    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+    
+    if ($_POST['submit']) {
+    if (mail ($to, $subject, $body, $from)) { 
+        echo '<p>Your message has been sent!</p>';
+    } else { 
+        echo '<p>Something went wrong, go back and try again!</p>'; 
+    }
+}
   
 ?>
